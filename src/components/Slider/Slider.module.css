@@ -1,0 +1,36 @@
+
+.gliderContainer{
+    display:flex;
+    overflow:hidden;
+    gap:30px;
+    scroll-snap-type: x mandatory;
+    justify-content: center;
+}
+.imageSlide{
+    
+   scroll-snap-align: center;
+}
+.controls{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 32px 0;
+}
+.controls button{
+    padding: 16px;
+}
+
+.controls button:hover{
+    background-color: var(--violet);
+    color: white;
+}
+@media (max-width:768px){
+    .gliderContainer{
+        gap:1rem;
+    }
+    .imageSlide{
+        width: 72%;
+        border-radius: 15px;
+    }
+    
+}

@@ -1,0 +1,124 @@
+.wrapper{
+    max-width: 1100px;
+    margin:0 auto;
+    padding:8px;
+    display:flex;
+    flex-direction: column;
+    gap:5rem;
+}
+.heroText{
+    text-align: center;
+    font-size:var(--fs-body-m);
+    max-width: 751px;
+    margin:0 auto;
+}
+.heroTitle{
+    font-size: var(--fs-heading-l);
+    line-height: var(--leading-heading-l);
+    margin-bottom: 1rem;
+}
+
+.heroDescription{
+    color:var(--gray);
+}
+.heroGridContainer{
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 1fr 1fr;
+    gap:1.5rem;
+}
+.heroGridItem{
+    padding:1.5rem;
+    border-radius: 15px;
+    color:white;
+    font-size:1.5rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.heroGridItem img{
+    margin-left:auto;
+}
+.heroGridItem h3{
+    font-weight:var(--fw-body);
+    margin-top:2.5rem;
+}
+.heroGridItem:nth-child(1){
+    grid-column:1/3;
+    grid-row:1/3;
+}
+
+.heroGridItem:nth-child(4){
+    grid-column:5/7;
+}
+.heroGridItem:nth-child(5){
+    grid-column:3/5;
+}
+.heroGridItem:nth-child(6){
+    grid-column:5/7;
+    
+}
+
+@media (max-width:992px){
+    .wrapper{
+        padding:0 40px;
+    }
+    .heroTitle{
+        font-size:var(--fs-heading-m);
+    }
+    .heroText{
+        max-width: 573px;
+    }
+    .heroGridContainer{
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+    .heroGridItem:nth-child(1),.heroGridItem:nth-child(4),.heroGridItem:nth-child(5),.heroGridItem:nth-child(6){
+        grid-column:auto;
+        grid-row:auto;
+    }
+    
+    
+    .heroGridItem:nth-child(1){
+        grid-column:1/3;
+        grid-row:1/3;
+    }
+    .heroGridItem:nth-child(4){
+        grid-column:1/3;
+        grid-row:3;
+    }
+    .heroGridItem:nth-child(5){
+        grid-column:3/5;
+        grid-row:2;
+    }
+    .heroGridItem:nth-child(6){
+        grid-column:3/5;
+        grid-row:3;
+    }
+    
+    
+   
+}
+
+@media (max-width:600px){
+    .wrapper{
+        padding: 0 1rem;
+    }
+    .heroGridContainer{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .heroGridItem:nth-child(1),.heroGridItem:nth-child(4),.heroGridItem:nth-child(5),.heroGridItem:nth-child(6){
+        grid-column:auto;
+        grid-row:auto;
+    }
+    .heroGridItem:nth-child(1){
+        grid-column:1/3;
+        
+    }
+    .heroGridItem:nth-child(4),.heroGridItem:nth-child(5),.heroGridItem:nth-child(6){
+        grid-column:1/3;
+        grid-row:auto;
+    }
+}
+

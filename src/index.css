@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  
+
+  -webkit-font-smoothing: antialiased;
+  --violet:#755CDE;
+  --orange:#F6A560;
+  --pink:#F39E9E;
+  --red:#EB7565;
+  --blue:#61C4B7;
+  --dark-violet:#552049;
+  --black:#030303;
+  --gray:#7A746E;
+  --fs-heading-l:56px;
+  --leading-heading-l:70px;
+  --fs-heading-m:40px;
+  --leading-heading-m:50px;
+  --fs-heading-s:32px;
+  --leading-heading-s:40px;
+  --fs-body-m:18px;
+  --leading-body-m:28px;
+  --ff-jakarta: 'Plus Jakarta Sans', sans-serif;
+  --fw-heading:700;
+  --fw-body:500;
+  font-family: var(--ff-jakarta);
+  line-height: 1.5;
+  font-size: var(--fs-body-m);
+  line-height: var(--leading-body-m);
+}
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/* 
+
+*/
+button:hover{
+  cursor: pointer;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  8. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
