@@ -15,7 +15,7 @@ export default function Footer() {
             <button className={styles.footerButton}>Free consultation</button>
       </div>
       <div className={styles.navbar}>
-        <img src="./logo.svg" />
+        <img src="./logo.svg" alt=""/>
         <button>Free consultation</button>
       </div>
     </footer>

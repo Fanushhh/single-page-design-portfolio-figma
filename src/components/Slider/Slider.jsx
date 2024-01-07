@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Slider.module.css";
+import VisuallyHidden from "../VisuallyHidden/VisuallyHidden";
 
 export default function Slider({images}) {
     const [currentSlide, setCurrentSlide] = React.useState(2);
@@ -42,9 +43,11 @@ export default function Slider({images}) {
         <div className={styles.controls}>
           <button onClick={() => previous()}>
             <img src="./icon-arrow-left.svg" alt="" />
+            <VisuallyHidden description="Previous slide"/>
           </button>
           <button onClick={() => next()}>
             <img src="./icon-arrow-right.svg" alt="" />
+            <VisuallyHidden description="Next slide"/>
           </button>
         </div>
       </div>

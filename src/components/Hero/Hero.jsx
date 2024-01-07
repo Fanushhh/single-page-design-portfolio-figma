@@ -13,7 +13,7 @@ export const Hero = () => {
             return(
                 <div key={item.key} className={styles.heroGridItem} style={{backgroundColor:` var(--${item.background})`}}>
                     <img src={item.image} alt={item.title}/>
-                    <h3>{item.title}</h3>
+                    <h2>{item.title}</h2>
                 </div>
             )
         })}

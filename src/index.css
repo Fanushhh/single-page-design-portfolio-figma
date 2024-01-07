@@ -41,6 +41,7 @@ body {
   line-height: 1.5;
   font-size: var(--fs-body-m);
   line-height: var(--leading-body-m);
+  background-color:#FFF7F0;
 }
 /*
   5. Improve media defaults
